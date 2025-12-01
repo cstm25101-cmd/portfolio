@@ -11,7 +11,8 @@
         /* カスタムスタイル */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8f9fa; /* 非常に薄いグレー */
+            /* 背景色を富士山の雪解け水をイメージした淡い色に変更 */
+            background-color: #f7fafc; 
         }
         .section-title {
             position: relative;
@@ -25,7 +26,8 @@
             bottom: 0;
             width: 50px; /* 短い下線 */
             height: 3px;
-            background-color: #1e40af; /* 濃いめの青 */
+            /* アクセントカラーを静岡茶をイメージした深緑に変更 */
+            background-color: #047857; 
             border-radius: 9999px;
         }
         /* プロジェクトカードのホバー効果 */
@@ -40,17 +42,17 @@
 </head>
 <body class="text-gray-800">
 
-    <!-- ヘッダー / ナビゲーション -->
+    <!-- ヘッダー / ナビゲーション (富士山と青空のイメージ) -->
     <header class="bg-white shadow-md sticky top-0 z-10">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold text-gray-900">
-                Yama's Portfolio
+                Taro's Portfolio <span class="text-green-700">| 静岡スタイル</span>
             </div>
             <nav class="hidden md:flex space-x-8">
-                <a href="#about" class="text-gray-600 hover:text-blue-700 transition duration-150">自己紹介</a>
-                <a href="#skills" class="text-gray-600 hover:text-blue-700 transition duration-150">スキル</a>
-                <a href="#projects" class="text-gray-600 hover:text-blue-700 transition duration-150">プロジェクト</a>
-                <a href="#contact" class="text-gray-600 hover:text-blue-700 transition duration-150">連絡先</a>
+                <a href="#about" class="text-gray-600 hover:text-green-700 transition duration-150">自己紹介</a>
+                <a href="#skills" class="text-gray-600 hover:text-green-700 transition duration-150">スキル</a>
+                <a href="#projects" class="text-gray-600 hover:text-green-700 transition duration-150">プロジェクト</a>
+                <a href="#contact" class="text-gray-600 hover:text-green-700 transition duration-150">連絡先</a>
             </nav>
             <!-- モバイルメニューボタン（必要に応じてJavaScriptで実装） -->
         </div>
@@ -59,18 +61,19 @@
     <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- ヒーローセクション -->
-        <section class="py-24 md:py-32 text-center bg-white rounded-lg shadow-lg mt-8 mb-12">
+        <section class="py-24 md:py-32 text-center bg-white rounded-lg shadow-xl mt-8 mb-12 border-t-4 border-green-700">
             <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4">
                 山田 太郎
             </h1>
             <p class="text-xl text-gray-600 mb-8">
-                日本大学 理工学部 応用情報工学科 3年 | Web開発とデータ分析に関心
+                日本大学 理工学部 3年 | Web開発とデータ分析に関心
             </p>
             <div class="flex justify-center space-x-4">
-                <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full transition duration-300 shadow-md">
+                <!-- ボタンカラーを深緑（静岡茶）に変更 -->
+                <a href="#projects" class="bg-green-700 hover:bg-green-800 text-white font-semibold py-3 px-6 rounded-full transition duration-300 shadow-md">
                     実績を見る
                 </a>
-                <a href="#contact" class="bg-transparent border border-blue-600 text-blue-600 hover:bg-blue-50 py-3 px-6 rounded-full transition duration-300">
+                <a href="#contact" class="bg-transparent border border-green-700 text-green-700 hover:bg-green-50 py-3 px-6 rounded-full transition duration-300">
                     連絡を取る
                 </a>
             </div>
@@ -81,16 +84,16 @@
             <h2 class="text-3xl font-bold text-gray-900 section-title">自己紹介</h2>
             <div class="bg-white p-8 md:p-10 rounded-xl shadow-lg">
                 <p class="text-gray-700 leading-relaxed mb-6">
-                    日本大学理工学部応用情報工学科に在籍している山田太郎と申します。授業でプログラミングとデータサイエンスに触れたことをきっかけに、Web開発、特にフロントエンド技術とバックエンドの効率化に強い興味を持つようになりました。常に新しい技術を学び続け、ユーザー体験を向上させるための工夫を凝らすことをモットーとしています。
+                    日本大学理工学部に在籍している山田太郎と申します。授業でプログラミングとデータサイエンスに触れたことをきっかけに、Web開発、特にフロントエンド技術とバックエンドの効率化に強い興味を持つようになりました。常に新しい技術を学び続け、ユーザー体験を向上させるための工夫を凝らすことをモットーとしています。
                 </p>
 
-                <h3 class="text-2xl font-semibold text-gray-800 mb-3 border-l-4 border-blue-500 pl-3">学生時代に力を入れたこと</h3>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3 border-l-4 border-green-700 pl-3">学生時代に力を入れたこと (ガクチカ)</h3>
                 <div class="text-gray-700 leading-relaxed bg-gray-50 p-6 rounded-lg border border-gray-200">
                     <p>
                         【飲食店のアルバイトにおける顧客体験向上】私は、地域密着型カフェでのアルバイトにおいて、リピーター率の向上に尽力しました。お客様の滞在時間や注文傾向を記録・分析したところ、混雑時の待ち時間が特に不満の原因となっていることが判明しました。
                     </p>
                     <p class="mt-2">
-                        これに対し、私はまず簡易的なモバイルオーダーシステム（Webアプリ）を提案・導入し、待ち時間中のストレスを軽減しました。さらに、システムのデータを基に、人気メニューの事前仕込み量を最適化し、提供時間を平均15%短縮しました。この取り組みの結果、顧客アンケートにおける「サービスの満足度」が3ヶ月で15ポイント上昇し、翌半期のリピーター率も7%増加しました。この経験から、データ分析に基づく課題解決能力と、チームを巻き込む実行力を身につけました。
+                        これに対し、私はまず簡易的なモバイルオーダーシステム（Webアプリ）を提案・導入し、待ち時間中のストレスを軽減しました。さらに、システムのデータを基に、人気メニューの事前仕込み量を最適化し、提供時間を平均15%短縮しました。この取り組みの結果、顧客アンケートにおける「サービスの満足度」が3ヶ月で15ポイント上昇し、翌半期のリピーター率も7%増加しました。この経験から、データ分析に基づく課題解決能力と、チームを巻き込む実行力を身につけました。（文字数調整のため、実際の文字数は多少前後します。）
                     </p>
                 </div>
             </div>
@@ -101,8 +104,9 @@
             <h2 class="text-3xl font-bold text-gray-900 section-title">スキル</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- スキルカテゴリ 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
-                    <h3 class="text-xl font-semibold mb-3 text-blue-700">フロントエンド</h3>
+                <!-- ボーダーカラーを深緑に変更 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-700">
+                    <h3 class="text-xl font-semibold mb-3 text-green-700">フロントエンド</h3>
                     <ul class="space-y-2 text-gray-700 list-disc pl-5">
                         <li>HTML5 & CSS3 (Tailwind CSS, SCSS)</li>
                         <li>JavaScript (ES6+)</li>
@@ -111,8 +115,9 @@
                     </ul>
                 </div>
                 <!-- スキルカテゴリ 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
-                    <h3 class="text-xl font-semibold mb-3 text-blue-700">バックエンド & DB</h3>
+                <!-- ボーダーカラーを深緑に変更 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-700">
+                    <h3 class="text-xl font-semibold mb-3 text-green-700">バックエンド & DB</h3>
                     <ul class="space-y-2 text-gray-700 list-disc pl-5">
                         <li>Python (Flask / Djangoの基礎)</li>
                         <li>Node.js (Express)</li>
@@ -121,8 +126,9 @@
                     </ul>
                 </div>
                 <!-- スキルカテゴリ 3 -->
-                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-500">
-                    <h3 class="text-xl font-semibold mb-3 text-blue-700">その他</h3>
+                <!-- ボーダーカラーを深緑に変更 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-700">
+                    <h3 class="text-xl font-semibold mb-3 text-green-700">その他</h3>
                     <ul class="space-y-2 text-gray-700 list-disc pl-5">
                         <li>Git & GitHub (チーム開発経験)</li>
                         <li>データ分析 (Pandas, Matplotlib)</li>
@@ -140,17 +146,19 @@
 
                 <!-- プロジェクトカード 1 -->
                 <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden border">
-                    <!-- プレースホルダー画像 -->
-                    <img src="https://placehold.co/600x400/1e40af/ffffff?text=Web+App+Screen" alt="プロジェクト1のスクリーンショット" class="w-full h-48 object-cover">
+                    <!-- プレースホルダー画像 - アクセントカラーを緑に変更 -->
+                    <img src="https://placehold.co/600x400/047857/ffffff?text=Web+App+Screen" alt="プロジェクト1のスクリーンショット" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-900 mb-2">簡易モバイルオーダーシステム</h3>
                         <p class="text-gray-600 mb-4">カフェアルバイトでの課題解決のために作成。ReactとFirebaseを使用してリアルタイム注文管理を実現。</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
+                            <!-- バッジの色を緑系に変更 -->
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
                             <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
                             <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Tailwind CSS</span>
                         </div>
-                        <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center">
+                        <!-- リンクカラーを深緑に変更 -->
+                        <a href="#" class="text-green-700 hover:text-green-800 font-semibold inline-flex items-center">
                             詳細を見る
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -159,8 +167,8 @@
 
                 <!-- プロジェクトカード 2 -->
                 <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden border">
-                    <!-- プレースホルダー画像 -->
-                    <img src="https://placehold.co/600x400/34d399/1f2937?text=Data+Visualization" alt="プロジェクト2のスクリーンショット" class="w-full h-48 object-cover">
+                    <!-- プレースホルダー画像 - アクセントカラーを青系に変更（駿河湾のイメージ） -->
+                    <img src="https://placehold.co/600x400/3b82f6/1f2937?text=Data+Visualization" alt="プロジェクト2のスクリーンショット" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-gray-900 mb-2">地域経済データ分析と可視化</h3>
                         <p class="text-gray-600 mb-4">大学のゼミで取り組んだ、地域別の消費動向とGDP成長率の関係を分析し、D3.jsで可視化したダッシュボード。</p>
@@ -169,7 +177,8 @@
                             <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Pandas</span>
                             <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">D3.js</span>
                         </div>
-                        <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center">
+                        <!-- リンクカラーを深緑に変更 -->
+                        <a href="#" class="text-green-700 hover:text-green-800 font-semibold inline-flex items-center">
                             詳細を見る
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                         </a>
@@ -189,13 +198,15 @@
 
                 <div class="space-y-4">
                     <div class="flex items-center space-x-3">
-                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path></svg>
+                        <!-- アイコンカラーを深緑に変更 -->
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path></svg>
                         <span class="text-gray-700">contact.taro.yamada@example.com</span>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        <!-- アイコンカラーを深緑に変更 -->
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                         <!-- GitHubアイコンのSVG -->
-                        <span class="text-gray-700">GitHub: <a href="#" target="_blank" class="text-blue-600 hover:underline">@TaroDev</a></span>
+                        <span class="text-gray-700">GitHub: <a href="#" target="_blank" class="text-green-700 hover:underline">@TaroDev</a></span>
                     </div>
                 </div>
             </div>
@@ -203,7 +214,7 @@
 
     </main>
 
-    <!-- フッター -->
+    <!-- フッター (落ち着いたトーン) -->
     <footer class="bg-gray-800 text-white mt-12 py-6">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p>&copy; 2024 Taro Yamada Portfolio. All rights reserved.</p>
